@@ -22,8 +22,8 @@ export default function ToDoList() {
         icon: "success",
         title: "Success!",
         text: "New task added successfully !",
-        showCloseButton: true,
         showConfirmButton: false,
+        timer:1200
       });
     }
   }
@@ -45,7 +45,7 @@ export default function ToDoList() {
           icon: "success",
           title: "Deleted !",
           text: "Task has been deleted.",
-          showCloseButton: true,
+          timer:1200,
           showConfirmButton: false,
         });
       }
@@ -74,7 +74,7 @@ export default function ToDoList() {
       <div className="input-group px-5 mb-3 ">
         <input
           type="text"
-          className="form-control no-outline"
+          className="form-control no-outline fs-4"
           placeholder="Add New Task..."
           value={newTask}
           onChange={handleInputChange}
